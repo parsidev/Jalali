@@ -19,21 +19,14 @@ Run the Composer update comand
 In your `config/app.php` add `'Parsidev\Jalali\JalaliServiceProvider'` to the end of the `$providers` array
 
 ```php
-    'providers' => array(
-
-        'Illuminate\Foundation\Providers\ArtisanServiceProvider',
-        'Illuminate\Auth\AuthServiceProvider',
-        ...
         'Parsidev\Jalali\JalaliServiceProvider',
-
-    ),
 ```
 
 <a name="basic-usage"></a>
 ## Basic Usage
 ## Examples ##
 
-Some Examples (based on examples provided by Sallar)
+Some Examples
 
 ```php
 // default timestamp is now
