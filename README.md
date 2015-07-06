@@ -16,7 +16,7 @@ Run the Composer update comand
 
     $ composer update
 
-In your `config/app.php` add `'Parsidev\Jalali\JalaliServiceProvider'` to the end of the `$providers` array
+In your `config/app.php` add `JalaliServiceProvider` to the end of the `$providers` array
 
 ```php
         Parsidev\Jalali\JalaliServiceProvider::class,
