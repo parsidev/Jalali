@@ -9,7 +9,7 @@ This Package helps developers to easily work with Jalali (Shamsi or Iranian) dat
 In the `require` key of `composer.json` file add the following
 
 ```yml
-    "parsidev/jalali": "dev-master"
+    "parsidev/jalali": "5.1.x-dev"
 ```
 
 Run the Composer update comand
@@ -19,7 +19,7 @@ Run the Composer update comand
 In your `config/app.php` add `'Parsidev\Jalali\JalaliServiceProvider'` to the end of the `$providers` array
 
 ```php
-        'Parsidev\Jalali\JalaliServiceProvider',
+        Parsidev\Jalali\JalaliServiceProvider::class,
 ```
 
 <a name="basic-usage"></a>
