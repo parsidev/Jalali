@@ -1,6 +1,6 @@
 {
     "name": "parsidev/jalali",
-    "description": "Shamsi Date For Laravel 5",
+    "description": "Shamsi Date For Laravel 5.2",
     "license": "MIT",
     "authors": [
         {
@@ -10,7 +10,7 @@
     ],
     "require": {
         "php": ">=5.5.9",
-        "illuminate/support": "5.1.*"
+        "illuminate/support": "5.2.*"
     },
     "autoload": {
         "psr-0": {
