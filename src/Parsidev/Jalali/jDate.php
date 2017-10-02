@@ -2,122 +2,116 @@
 
 class jDate
 {
-	protected $time;
+    protected $time;
 
-	protected $formats = array(
-		'datetime' => '%Y-%m-%d %H:%M:%S',
-		'date'     => '%Y-%m-%d',
-		'time'     => '%H:%M:%S',
-	);
+    protected $convert = true;
 
-	public static function forge($str = null)
-	{
-		$class = __CLASS__;
-		return new $class($str);
-	}
+    protected $formats = array(
+        'datetime' => '%Y-%m-%d %H:%M:%S',
+        'date' => '%Y-%m-%d',
+        'time' => '%H:%M:%S',
+    );
 
-	public function __construct($str = null)
-	{
-		if ($str === null){
-			$this->time = time();
-		}
-		else
-		{
-			if (is_numeric($str)){
-				$this->time = $str;
-			}
-			else
-			{
-				$time = strtotime($str);
+    public static function forge($str = null, $convert = true)
+    {
+        $class = __CLASS__;
+        return new $class($str, $convert);
+    }
 
-				if (!$time){
-					$this->time = false;
-				}
-				else{
-					$this->time = $time;
-				}
-			}
-		}
-	}
+    public function __construct($str = null, $convert = true)
+    {
+        $this->convert = $convert;
+        if ($str === null) {
+            $this->time = time();
+        } else {
+            if (is_numeric($str)) {
+                $this->time = $str;
+            } else {
+                $time = strtotime($str);
 
-	public function time()
-	{
-		return $this->time;
-	}
+                if (!$time) {
+                    $this->time = false;
+                } else {
+                    $this->time = $time;
+                }
+            }
+        }
+    }
 
-	public function format($str)
-	{
-		// convert alias string
-		if (in_array($str, array_keys($this->formats))){
-			$str = $this->formats[$str];
-		}
+    public function time()
+    {
+        return $this->time;
+    }
 
-		// if valid unix timestamp...
-		if ($this->time !== false){
-			return jDateTime::strftime($str, $this->time, false);
-		}
-		else{
-			return false;
-		}
-	}
+    public function format($str)
+    {
+        // convert alias string
+        if (in_array($str, array_keys($this->formats))) {
+            $str = $this->formats[$str];
+        }
 
-	public function reforge($str)
-	{
-		if ($this->time !== false)
-		{
-			// amend the time
-			$time = strtotime($str, $this->time);
+        // if valid unix timestamp...
+        if ($this->time !== false) {
+            return jDateTime::strftime($str, $this->time, $this->convert);
+        } else {
+            return false;
+        }
+    }
 
-			// if conversion fails...
-			if (!$time){
-				// set time as false
-				$this->time = false;
-			}
-			else{
-				// accept time value
-				$this->time = $time;
-			}
-		}
+    public function reforge($str)
+    {
+        if ($this->time !== false) {
+            // amend the time
+            $time = strtotime($str, $this->time);
 
-		return $this;
-	}
+            // if conversion fails...
+            if (!$time) {
+                // set time as false
+                $this->time = false;
+            } else {
+                // accept time value
+                $this->time = $time;
+            }
+        }
 
-	public function ago()
-	{
-		$now = time();
-		$time = $this->time();
+        return $this;
+    }
 
-		// catch error
-		if (!$time) return false;
+    public function ago()
+    {
+        $now = time();
+        $time = $this->time();
 
-		// build period and length arrays
-		$periods = array('ثانیه', 'دقیقه', 'ساعت', 'روز', 'هفته', 'ماه', 'سال', 'قرن');
-		$lengths = array(60, 60, 24, 7, 4.35, 12, 10);
+        // catch error
+        if (!$time) return false;
 
-		// get difference
-		$difference = $now - $time;
+        // build period and length arrays
+        $periods = array('ثانیه', 'دقیقه', 'ساعت', 'روز', 'هفته', 'ماه', 'سال', 'قرن');
+        $lengths = array(60, 60, 24, 7, 4.35, 12, 10);
 
-		// set descriptor
-		if ($difference < 0)
-		{
-			$difference = abs($difference); // absolute value
-			$negative = true;
-		}
+        // get difference
+        $difference = $now - $time;
 
-		// do math
-		for($j = 0; $difference >= $lengths[$j] and $j < count($lengths)-1; $j++){
-			$difference /= $lengths[$j];
-		}
+        // set descriptor
+        if ($difference < 0) {
+            $difference = abs($difference); // absolute value
+            $negative = true;
+        }
 
-		// round difference
-		$difference = intval(round($difference));
+        // do math
+        for ($j = 0; $difference >= $lengths[$j] and $j < count($lengths) - 1; $j++) {
+            $difference /= $lengths[$j];
+        }
 
-		// return
-		return number_format($difference).' '.$periods[$j].' '.(isset($negative) ? '' : 'پیش');
-	}
+        // round difference
+        $difference = intval(round($difference));
 
-	public function until()
-	{
-		return $this->ago();
-	}
+        // return
+        return number_format($difference) . ' ' . $periods[$j] . ' ' . (isset($negative) ? '' : 'پیش');
+    }
+
+    public function until()
+    {
+        return $this->ago();
+    }
 }
