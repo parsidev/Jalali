@@ -54,7 +54,7 @@ class jDate
 
 		// if valid unix timestamp...
 		if ($this->time !== false){
-			return jDateTime::strftime($str, $this->time);
+			return jDateTime::strftime($str, $this->time, false);
 		}
 		else{
 			return false;
