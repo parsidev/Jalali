@@ -1,6 +1,6 @@
 {
     "name": "parsidev/jalali",
-    "description": "Shamsi Date For Laravel 5.4",
+    "description": "Shamsi Date For Laravel 5.5",
     "license": "MIT",
     "authors": [
         {
@@ -9,13 +9,20 @@
         }
     ],
     "require": {
-        "php": ">=5.6.4",
-        "illuminate/support": "5.4.*"
+        "php": ">=7.0.0",
+        "illuminate/support": "5.5.*"
     },
     "autoload": {
         "psr-0": {
             "Parsidev\\Jalali": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Parsidev\\Jalali\\JalaliServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
 }
