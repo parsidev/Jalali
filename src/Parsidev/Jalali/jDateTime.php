@@ -170,7 +170,7 @@ class jDateTime
         return self::date($format, $stamp, false, false, $timezone);
     }
     
-    public static function strftime($format, $stamp = false, $jalali = null, $timezone = null)
+    public static function strftime($format, $stamp = false, $convert = null, $jalali = null, $timezone = null)
     {
         $str_format_code = array(
             "%a", "%A", "%d", "%e", "%j", "%u", "%w",
@@ -196,7 +196,7 @@ class jDateTime
         $format = str_replace($str_format_code, $date_format_code, $format);
 
         //Convert to date
-        return self::date($format, $stamp, $jalali, $timezone);
+        return self::date($format, $stamp, $convert, $jalali, $timezone);
     }
 
     public static function mktime($hour, $minute, $second, $month, $day, $year, $jalali = null, $timezone = null)
