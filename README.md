@@ -9,7 +9,7 @@ This Package helps developers to easily work with Jalali (Shamsi or Iranian) dat
 In the `require` key of `composer.json` file add the following
 
 ```yml
-    "parsidev/jalali": "v5.6.x-dev"
+    "parsidev/jalali": "5.6.x-dev"
 ```
 
 Run the Composer update comand
