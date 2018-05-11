@@ -7,10 +7,11 @@ class jDate
     protected $convert = true;
 
     protected $formats = array(
-        'datetime' => '%Y-%m-%d %H:%M:%S',
+		'datetime' => '%Y-%m-%d %H:%M:%S',
+        'datetime2' => '%Y/%m/%d %H:%M:%S',
         'date' => '%Y-%m-%d',
         'time' => '%H:%M:%S',
-    );
+	);
 
     public static function forge($str = null, $convert = true)
     {
