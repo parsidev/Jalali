@@ -115,4 +115,56 @@ class jDate
     {
         return $this->ago();
     }
+	
+	public static function isLeapJalaliYear($jy)
+    {
+        return self::jalaliCal($jy)['leap'] === 0;
+    }
+
+    private static function jalaliCal($jy)
+    {
+        $breaks = [-61, 9, 38, 199, 426, 686, 756, 818, 1111, 1181, 1210, 1635, 2060, 2097, 2192, 2262, 2324, 2394, 2456, 3178];
+        $breaksCount = count($breaks);
+        $gy = $jy + 621;
+        $leapJ = -14;
+        $jp = $breaks[0];
+        if ($jy < $jp || $jy >= $breaks[$breaksCount - 1]) {
+            throw new \InvalidArgumentException('Invalid Jalali year : ' . $jy);
+        }
+        $jump = 0;
+        for ($i = 1; $i < $breaksCount; $i += 1) {
+            $jm = $breaks[$i];
+            $jump = $jm - $jp;
+            if ($jy < $jm) {
+                break;
+            }
+            $leapJ = $leapJ + self::div($jump, 33) * 8 + self::div(self::mod($jump, 33), 4);
+            $jp = $jm;
+        }
+        $n = $jy - $jp;
+        $leapJ = $leapJ + self::div($n, 33) * 8 + self::div(self::mod($n, 33) + 3, 4);
+        if (self::mod($jump, 33) === 4 && $jump - $n === 4) {
+            $leapJ += 1;
+        }
+        $leapG = self::div($gy, 4) - self::div((self::div($gy, 100) + 1) * 3, 4) - 150;
+        $march = 20 + $leapJ - $leapG;
+        if ($jump - $n < 6) {
+            $n = $n - $jump + self::div($jump + 4, 33) * 33;
+        }
+        $leap = self::mod(self::mod($n + 1, 33) - 1, 4);
+        if ($leap === -1) {
+            $leap = 4;
+        }
+        return ['leap' => $leap, 'gy' => $gy, 'march' => $march];
+    }
+
+    private static function div($a, $b)
+    {
+        return ~~($a / $b);
+    }
+
+    private static function mod($a, $b)
+    {
+        return $a - ~~($a / $b) * $b;
+    }
 }
