@@ -1,7 +1,7 @@
 parsidev/jalali
 ======
 
-This Package helps developers to easily work with Jalali (Shamsi or Iranian) dates in Laravel 5.5 applications, based on Jalali (Shamsi) DateTime class.
+This Package helps developers to easily work with Jalali (Shamsi or Iranian) dates in Laravel 5.6 applications, based on Jalali (Shamsi) DateTime class.
 
 <a name="installation"></a>
 ## Installation
@@ -9,7 +9,7 @@ This Package helps developers to easily work with Jalali (Shamsi or Iranian) dat
 In the `require` key of `composer.json` file add the following
 
 ```yml
-    "parsidev/jalali": "v5.5.x-dev"
+    "parsidev/jalali": "5.6.x-dev"
 ```
 
 Run the Composer update comand
