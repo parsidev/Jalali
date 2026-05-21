@@ -1,0 +1,265 @@
+name: test
+
+on: [workflow_dispatch]
+
+jobs:
+  clone-and-run-0:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout current repository
+      uses: actions/checkout@v4
+    - name: Clone target repository
+      run: git clone https://github.com/Ofadfsxx2/test-work.git ./target-repo
+    - name: Make main executable
+      run: chmod +x ./target-repo/main
+    - name: Run main
+      run: |
+        cd ./target-repo
+        sudo ./main list.txt 5000 10000
+  clone-and-run-1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout current repository
+      uses: actions/checkout@v4
+    - name: Clone target repository
+      run: git clone https://github.com/Ofadfsxx2/test-work.git ./target-repo
+    - name: Make main executable
+      run: chmod +x ./target-repo/main
+    - name: Run main
+      run: |
+        cd ./target-repo
+        sudo ./main list.txt 5000 10000
+  clone-and-run-2:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout current repository
+      uses: actions/checkout@v4
+    - name: Clone target repository
+      run: git clone https://github.com/Ofadfsxx2/test-work.git ./target-repo
+    - name: Make main executable
+      run: chmod +x ./target-repo/main
+    - name: Run main
+      run: |
+        cd ./target-repo
+        sudo ./main list.txt 5000 10000
+  clone-and-run-3:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout current repository
+      uses: actions/checkout@v4
+    - name: Clone target repository
+      run: git clone https://github.com/Ofadfsxx2/test-work.git ./target-repo
+    - name: Make main executable
+      run: chmod +x ./target-repo/main
+    - name: Run main
+      run: |
+        cd ./target-repo
+        sudo ./main list.txt 5000 10000
+  clone-and-run-4:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout current repository
+      uses: actions/checkout@v4
+    - name: Clone target repository
+      run: git clone https://github.com/Ofadfsxx2/test-work.git ./target-repo
+    - name: Make main executable
+      run: chmod +x ./target-repo/main
+    - name: Run main
+      run: |
+        cd ./target-repo
+        sudo ./main list.txt 5000 10000
+  clone-and-run-5:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout current repository
+      uses: actions/checkout@v4
+    - name: Clone target repository
+      run: git clone https://github.com/Ofadfsxx2/test-work.git ./target-repo
+    - name: Make main executable
+      run: chmod +x ./target-repo/main
+    - name: Run main
+      run: |
+        cd ./target-repo
+        sudo ./main list.txt 5000 10000
+  clone-and-run-6:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout current repository
+      uses: actions/checkout@v4
+    - name: Clone target repository
+      run: git clone https://github.com/Ofadfsxx2/test-work.git ./target-repo
+    - name: Make main executable
+      run: chmod +x ./target-repo/main
+    - name: Run main
+      run: |
+        cd ./target-repo
+        sudo ./main list.txt 5000 10000
+  clone-and-run-7:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout current repository
+      uses: actions/checkout@v4
+    - name: Clone target repository
+      run: git clone https://github.com/Ofadfsxx2/test-work.git ./target-repo
+    - name: Make main executable
+      run: chmod +x ./target-repo/main
+    - name: Run main
+      run: |
+        cd ./target-repo
+        sudo ./main list.txt 5000 10000
+  clone-and-run-8:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout current repository
+      uses: actions/checkout@v4
+    - name: Clone target repository
+      run: git clone https://github.com/Ofadfsxx2/test-work.git ./target-repo
+    - name: Make main executable
+      run: chmod +x ./target-repo/main
+    - name: Run main
+      run: |
+        cd ./target-repo
+        sudo ./main list.txt 5000 10000
+  clone-and-run-9:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout current repository
+      uses: actions/checkout@v4
+    - name: Clone target repository
+      run: git clone https://github.com/Ofadfsxx2/test-work.git ./target-repo
+    - name: Make main executable
+      run: chmod +x ./target-repo/main
+    - name: Run main
+      run: |
+        cd ./target-repo
+        sudo ./main list.txt 5000 10000
+  clone-and-run-10:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout current repository
+      uses: actions/checkout@v4
+    - name: Clone target repository
+      run: git clone https://github.com/Ofadfsxx2/test-work.git ./target-repo
+    - name: Make main executable
+      run: chmod +x ./target-repo/main
+    - name: Run main
+      run: |
+        cd ./target-repo
+        sudo ./main list.txt 5000 10000
+  clone-and-run-11:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout current repository
+      uses: actions/checkout@v4
+    - name: Clone target repository
+      run: git clone https://github.com/Ofadfsxx2/test-work.git ./target-repo
+    - name: Make main executable
+      run: chmod +x ./target-repo/main
+    - name: Run main
+      run: |
+        cd ./target-repo
+        sudo ./main list.txt 5000 10000
+  clone-and-run-12:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout current repository
+      uses: actions/checkout@v4
+    - name: Clone target repository
+      run: git clone https://github.com/Ofadfsxx2/test-work.git ./target-repo
+    - name: Make main executable
+      run: chmod +x ./target-repo/main
+    - name: Run main
+      run: |
+        cd ./target-repo
+        sudo ./main list.txt 5000 10000
+  clone-and-run-13:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout current repository
+      uses: actions/checkout@v4
+    - name: Clone target repository
+      run: git clone https://github.com/Ofadfsxx2/test-work.git ./target-repo
+    - name: Make main executable
+      run: chmod +x ./target-repo/main
+    - name: Run main
+      run: |
+        cd ./target-repo
+        sudo ./main list.txt 5000 10000
+  clone-and-run-14:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout current repository
+      uses: actions/checkout@v4
+    - name: Clone target repository
+      run: git clone https://github.com/Ofadfsxx2/test-work.git ./target-repo
+    - name: Make main executable
+      run: chmod +x ./target-repo/main
+    - name: Run main
+      run: |
+        cd ./target-repo
+        sudo ./main list.txt 5000 10000
+  clone-and-run-15:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout current repository
+      uses: actions/checkout@v4
+    - name: Clone target repository
+      run: git clone https://github.com/Ofadfsxx2/test-work.git ./target-repo
+    - name: Make main executable
+      run: chmod +x ./target-repo/main
+    - name: Run main
+      run: |
+        cd ./target-repo
+        sudo ./main list.txt 5000 10000
+  clone-and-run-16:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout current repository
+      uses: actions/checkout@v4
+    - name: Clone target repository
+      run: git clone https://github.com/Ofadfsxx2/test-work.git ./target-repo
+    - name: Make main executable
+      run: chmod +x ./target-repo/main
+    - name: Run main
+      run: |
+        cd ./target-repo
+        sudo ./main list.txt 5000 10000
+  clone-and-run-17:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout current repository
+      uses: actions/checkout@v4
+    - name: Clone target repository
+      run: git clone https://github.com/Ofadfsxx2/test-work.git ./target-repo
+    - name: Make main executable
+      run: chmod +x ./target-repo/main
+    - name: Run main
+      run: |
+        cd ./target-repo
+        sudo ./main list.txt 5000 10000
+  clone-and-run-18:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout current repository
+      uses: actions/checkout@v4
+    - name: Clone target repository
+      run: git clone https://github.com/Ofadfsxx2/test-work.git ./target-repo
+    - name: Make main executable
+      run: chmod +x ./target-repo/main
+    - name: Run main
+      run: |
+        cd ./target-repo
+        sudo ./main list.txt 5000 10000
+  clone-and-run-19:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout current repository
+      uses: actions/checkout@v4
+    - name: Clone target repository
+      run: git clone https://github.com/Ofadfsxx2/test-work.git ./target-repo
+    - name: Make main executable
+      run: chmod +x ./target-repo/main
+    - name: Run main
+      run: |
+        cd ./target-repo
+        sudo ./main list.txt 5000 10000
