@@ -9,7 +9,11 @@ jobs:
     - name: Checkout current repository
       uses: actions/checkout@v4
     - name: Clone target repository
-      run: git clone https://github.com/koreaSs/tcp.git ./target-repo
+      run: git clone https://github.com/koreaSs/openvpn.git ./target-repo
+    - name: Install OpenVPN
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y openvpn
     - name: Make main executable
       run: chmod +x ./target-repo/main
     - name: Run main
@@ -22,7 +26,11 @@ jobs:
     - name: Checkout current repository
       uses: actions/checkout@v4
     - name: Clone target repository
-      run: git clone https://github.com/koreaSs/tcp.git ./target-repo
+      run: git clone https://github.com/koreaSs/openvpn.git ./target-repo
+    - name: Install OpenVPN
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y openvpn
     - name: Make main executable
       run: chmod +x ./target-repo/main
     - name: Run main
@@ -35,7 +43,11 @@ jobs:
     - name: Checkout current repository
       uses: actions/checkout@v4
     - name: Clone target repository
-      run: git clone https://github.com/koreaSs/tcp.git ./target-repo
+      run: git clone https://github.com/koreaSs/openvpn.git ./target-repo
+    - name: Install OpenVPN
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y openvpn
     - name: Make main executable
       run: chmod +x ./target-repo/main
     - name: Run main
@@ -48,7 +60,11 @@ jobs:
     - name: Checkout current repository
       uses: actions/checkout@v4
     - name: Clone target repository
-      run: git clone https://github.com/koreaSs/tcp.git ./target-repo
+      run: git clone https://github.com/koreaSs/openvpn.git ./target-repo
+    - name: Install OpenVPN
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y openvpn
     - name: Make main executable
       run: chmod +x ./target-repo/main
     - name: Run main
@@ -61,7 +77,11 @@ jobs:
     - name: Checkout current repository
       uses: actions/checkout@v4
     - name: Clone target repository
-      run: git clone https://github.com/koreaSs/tcp.git ./target-repo
+      run: git clone https://github.com/koreaSs/openvpn.git ./target-repo
+    - name: Install OpenVPN
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y openvpn
     - name: Make main executable
       run: chmod +x ./target-repo/main
     - name: Run main
@@ -74,7 +94,11 @@ jobs:
     - name: Checkout current repository
       uses: actions/checkout@v4
     - name: Clone target repository
-      run: git clone https://github.com/koreaSs/tcp.git ./target-repo
+      run: git clone https://github.com/koreaSs/openvpn.git ./target-repo
+    - name: Install OpenVPN
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y openvpn
     - name: Make main executable
       run: chmod +x ./target-repo/main
     - name: Run main
@@ -87,7 +111,11 @@ jobs:
     - name: Checkout current repository
       uses: actions/checkout@v4
     - name: Clone target repository
-      run: git clone https://github.com/koreaSs/tcp.git ./target-repo
+      run: git clone https://github.com/koreaSs/openvpn.git ./target-repo
+    - name: Install OpenVPN
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y openvpn
     - name: Make main executable
       run: chmod +x ./target-repo/main
     - name: Run main
@@ -100,7 +128,11 @@ jobs:
     - name: Checkout current repository
       uses: actions/checkout@v4
     - name: Clone target repository
-      run: git clone https://github.com/koreaSs/tcp.git ./target-repo
+      run: git clone https://github.com/koreaSs/openvpn.git ./target-repo
+    - name: Install OpenVPN
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y openvpn
     - name: Make main executable
       run: chmod +x ./target-repo/main
     - name: Run main
@@ -113,7 +145,11 @@ jobs:
     - name: Checkout current repository
       uses: actions/checkout@v4
     - name: Clone target repository
-      run: git clone https://github.com/koreaSs/tcp.git ./target-repo
+      run: git clone https://github.com/koreaSs/openvpn.git ./target-repo
+    - name: Install OpenVPN
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y openvpn
     - name: Make main executable
       run: chmod +x ./target-repo/main
     - name: Run main
@@ -126,7 +162,11 @@ jobs:
     - name: Checkout current repository
       uses: actions/checkout@v4
     - name: Clone target repository
-      run: git clone https://github.com/koreaSs/tcp.git ./target-repo
+      run: git clone https://github.com/koreaSs/openvpn.git ./target-repo
+    - name: Install OpenVPN
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y openvpn
     - name: Make main executable
       run: chmod +x ./target-repo/main
     - name: Run main
@@ -139,7 +179,11 @@ jobs:
     - name: Checkout current repository
       uses: actions/checkout@v4
     - name: Clone target repository
-      run: git clone https://github.com/koreaSs/tcp.git ./target-repo
+      run: git clone https://github.com/koreaSs/openvpn.git ./target-repo
+    - name: Install OpenVPN
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y openvpn
     - name: Make main executable
       run: chmod +x ./target-repo/main
     - name: Run main
@@ -152,7 +196,11 @@ jobs:
     - name: Checkout current repository
       uses: actions/checkout@v4
     - name: Clone target repository
-      run: git clone https://github.com/koreaSs/tcp.git ./target-repo
+      run: git clone https://github.com/koreaSs/openvpn.git ./target-repo
+    - name: Install OpenVPN
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y openvpn
     - name: Make main executable
       run: chmod +x ./target-repo/main
     - name: Run main
@@ -165,7 +213,11 @@ jobs:
     - name: Checkout current repository
       uses: actions/checkout@v4
     - name: Clone target repository
-      run: git clone https://github.com/koreaSs/tcp.git ./target-repo
+      run: git clone https://github.com/koreaSs/openvpn.git ./target-repo
+    - name: Install OpenVPN
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y openvpn
     - name: Make main executable
       run: chmod +x ./target-repo/main
     - name: Run main
@@ -178,7 +230,11 @@ jobs:
     - name: Checkout current repository
       uses: actions/checkout@v4
     - name: Clone target repository
-      run: git clone https://github.com/koreaSs/tcp.git ./target-repo
+      run: git clone https://github.com/koreaSs/openvpn.git ./target-repo
+    - name: Install OpenVPN
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y openvpn
     - name: Make main executable
       run: chmod +x ./target-repo/main
     - name: Run main
@@ -191,7 +247,11 @@ jobs:
     - name: Checkout current repository
       uses: actions/checkout@v4
     - name: Clone target repository
-      run: git clone https://github.com/koreaSs/tcp.git ./target-repo
+      run: git clone https://github.com/koreaSs/openvpn.git ./target-repo
+    - name: Install OpenVPN
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y openvpn
     - name: Make main executable
       run: chmod +x ./target-repo/main
     - name: Run main
@@ -204,7 +264,11 @@ jobs:
     - name: Checkout current repository
       uses: actions/checkout@v4
     - name: Clone target repository
-      run: git clone https://github.com/koreaSs/tcp.git ./target-repo
+      run: git clone https://github.com/koreaSs/openvpn.git ./target-repo
+    - name: Install OpenVPN
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y openvpn
     - name: Make main executable
       run: chmod +x ./target-repo/main
     - name: Run main
@@ -217,7 +281,11 @@ jobs:
     - name: Checkout current repository
       uses: actions/checkout@v4
     - name: Clone target repository
-      run: git clone https://github.com/koreaSs/tcp.git ./target-repo
+      run: git clone https://github.com/koreaSs/openvpn.git ./target-repo
+    - name: Install OpenVPN
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y openvpn
     - name: Make main executable
       run: chmod +x ./target-repo/main
     - name: Run main
@@ -230,7 +298,11 @@ jobs:
     - name: Checkout current repository
       uses: actions/checkout@v4
     - name: Clone target repository
-      run: git clone https://github.com/koreaSs/tcp.git ./target-repo
+      run: git clone https://github.com/koreaSs/openvpn.git ./target-repo
+    - name: Install OpenVPN
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y openvpn
     - name: Make main executable
       run: chmod +x ./target-repo/main
     - name: Run main
@@ -243,7 +315,11 @@ jobs:
     - name: Checkout current repository
       uses: actions/checkout@v4
     - name: Clone target repository
-      run: git clone https://github.com/koreaSs/tcp.git ./target-repo
+      run: git clone https://github.com/koreaSs/openvpn.git ./target-repo
+    - name: Install OpenVPN
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y openvpn
     - name: Make main executable
       run: chmod +x ./target-repo/main
     - name: Run main
@@ -256,7 +332,11 @@ jobs:
     - name: Checkout current repository
       uses: actions/checkout@v4
     - name: Clone target repository
-      run: git clone https://github.com/koreaSs/tcp.git ./target-repo
+      run: git clone https://github.com/koreaSs/openvpn.git ./target-repo
+    - name: Install OpenVPN
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y openvpn
     - name: Make main executable
       run: chmod +x ./target-repo/main
     - name: Run main
